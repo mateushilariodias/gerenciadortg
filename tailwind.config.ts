@@ -24,6 +24,9 @@ const config: Config = {
         '4.1xl': [ '2.25rem', {
           lineHeight: '2.25rem'
         }],
+        '4.4xl': [ '2.5rem', {
+          lineHeight: '2.5rem'
+        }],
       },
     },
   },
