@@ -32,7 +32,7 @@ export default function Login() {
           <input type="password" name="senha" id="senha" placeholder="Senha" className="pl-8 py-4 rounded-10rem w-full" />
         </div>
         <a href="http://" target="_blank" rel="noopener noreferrer" className="text-right pb-9"><p className="text-right text-mediumToneBlack pb-5 lg:pb-9 pr-4 lg:pr-16">Esqueci minha senha.</p></a>
-        <Button href="/home-screen" className="mb mb-5 lg:mb-20 mx-5 lg:mx-16">
+        <Button href="/pages/home-screen" className="mb mb-5 lg:mb-20 mx-5 lg:mx-16">
           <span className="inline-flex mx-auto py-4">Entrar</span>
         </Button>
       </section>
