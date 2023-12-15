@@ -8,7 +8,7 @@ export default function HomeScreen() {
         <span className="text-mediumToneBlack py-7 text-center font-normal text-4xl justify-center flex-grow">TG+</span>
         <Image src="/images/exit.png" alt="Icon exit" height={72} width={72} className="flex justify-end mr-10" />
       </header>
-      <nav className="bg-whiteBlueGray col-span-1 flex flex-col justify-center ga h-screen fixed z-20">
+      <nav className="bg-whiteBlueGray col-span-1 flex flex-col justify-center gap-36 h-screen fixed z-20">
         <Image src="/images/home-sharp.png" alt="Icon home-sharp" height={80} width={80} className="mx-8" />
         <Image src="/images/calendar.png" alt="Icon calendar" height={80} width={80} className="mx-8" />
       </nav>
@@ -33,6 +33,30 @@ export default function HomeScreen() {
                 </clipPath>
               </defs>
             </svg>
+          </div>
+        </section>
+        <section className='bg-whiteBlueGray'>
+          <p className='text-5xl text-center font-bold pt-19'>Informações básicas</p>
+          <div>
+            <label htmlFor="title" className='font-bold '>Título do trabalho</label><br />
+            <input type="text" name="title" id="title" className='rounded-10rem ' />
+          </div>
+          <div>
+            <label htmlFor="firstStudent" className='font-bold '>Nome do aluno 1</label><br />
+            <input type="text" name="firstStudent" id="firstStudent" className='rounded-10rem ' />
+          </div>
+          <div>
+            <label htmlFor="secondStudent" className='font-bold '>Nome do aluno 2</label><br />
+            <input type="text" name="secondStudent" id="secondStudent" className='rounded-10rem' />
+          </div>
+          <div>
+            <label htmlFor="goal" className='font-bold '>Objetivo</label><br />
+            <input type="text" name="goal" id="goal" className='pl-8 py-4 rounded-10rem w-full' />
+          </div>
+          <div>
+            <label htmlFor="">Estimativa de prazo</label>
+            <input type="text" name="" id="" />
+            <input type="text" name="" id="" />
           </div>
         </section>
       </main>
