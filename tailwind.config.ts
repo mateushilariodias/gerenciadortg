@@ -28,6 +28,9 @@ const config: Config = {
           lineHeight: '2.5rem'
         }],
       },
+      maxWidth: {
+        '3.5xl': '51.25rem',
+      },
     },
   },
   plugins: [],

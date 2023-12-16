@@ -1,7 +1,15 @@
+import Input from '@/components/Input';
+import Button from '@/components/Button';
 import '../app/globals.css';
 import Image from "next/image";
+import { useState } from 'react';
 
 export default function HomeScreen() {
+
+  const [openModal, setOpenModal] = useState(false);
+
+  
+
   return (
     <div className="grid grid-cols-12">
       <header className="bg-whiteBlueGray flex items-center col-span-12 fixed z-30 w-full">
@@ -35,29 +43,34 @@ export default function HomeScreen() {
             </svg>
           </div>
         </section>
-        <section className='bg-whiteBlueGray'>
-          <p className='text-5xl text-center font-bold pt-19'>Informações básicas</p>
-          <div>
-            <label htmlFor="title" className='font-bold '>Título do trabalho</label><br />
-            <input type="text" name="title" id="title" className='rounded-10rem ' />
+        <section className='mt-10 bg-whiteBlueGray max-w-3.5xl pb-12 rounded-10rem'>
+          <p className='text-5xl text-center font-bold pt-20 pb-10'>Informações básicas</p>
+          <div className='mx-16'>
+            <label htmlFor="title" className='font-bold text-2xl'>Título do trabalho</label><br />
+            <Input type="text" name="title" id="title" className='mt-2 mb-5'/>
           </div>
-          <div>
-            <label htmlFor="firstStudent" className='font-bold '>Nome do aluno 1</label><br />
-            <input type="text" name="firstStudent" id="firstStudent" className='rounded-10rem ' />
+          <div className='mx-16'>
+            <label htmlFor="firstStudent" className='font-bold text-2xl'>Nome do aluno 1</label><br />
+            <Input type="text" name="firstStudent" id="firstStudent" className='mt-2 mb-5'/>
           </div>
-          <div>
-            <label htmlFor="secondStudent" className='font-bold '>Nome do aluno 2</label><br />
-            <input type="text" name="secondStudent" id="secondStudent" className='rounded-10rem' />
+          <div className='mx-16'>
+            <label htmlFor="secondStudent" className='font-bold text-2xl'>Nome do aluno 2</label><br />
+            <Input type="text" name="secondStudent" id="secondStudent" className='mt-2 mb-5'/>
           </div>
-          <div>
-            <label htmlFor="goal" className='font-bold '>Objetivo</label><br />
-            <input type="text" name="goal" id="goal" className='pl-8 py-4 rounded-10rem w-full' />
+          <div className='mx-16'>
+            <label htmlFor="goal" className='font-bold text-2xl'>Objetivo</label><br />
+            <Input type="text" name="goal" id="goal" className='mt-2 mb-5'/>
           </div>
-          <div>
-            <label htmlFor="">Estimativa de prazo</label>
-            <input type="text" name="" id="" />
-            <input type="text" name="" id="" />
+          <div className='mx-16 mb-9'>
+            <label htmlFor="" className='font-bold text-2xl'>Estimativa de prazo</label>
+            <div className='flex flex-row gap-5 mt-2'>
+            <Input type="text" name="initialDate" id="initialDate" />
+            <Input type="text" name="finalDate" id="finalDate" />
+            </div>
           </div>
+          <Button href='#' className='mx mx-16'>
+            <span className='inline-flex mx-auto py-6'>Cadastrar</span>
+          </Button>
         </section>
       </main>
     </div>

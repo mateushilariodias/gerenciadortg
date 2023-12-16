@@ -8,7 +8,7 @@ interface IButtonProps {
 }
 
 export default function Button({children, className, href}: IButtonProps): JSX.Element {
-    return (
+    return(
         <Link href={href} className={"font-inter text-2xl lg:text-3.1xl bg-mediumToneBlue text-whiteBlueGray rounded-10rem font-bold w-auto flex justify-center" + className}>
             {children}
         </Link>
