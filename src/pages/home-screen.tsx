@@ -34,7 +34,9 @@ export default function HomeScreen() {
       </header>
       <nav className="bg-whiteBlueGray col-span-1 flex flex-col justify-center gap-36 h-screen fixed z-20">
         <Image src="/images/home-sharp.png" alt="Icon home-sharp" height={80} width={80} className="mx-8" />
+        <Link href="calendar-screen">
         <Image src="/images/calendar.png" alt="Icon calendar" height={80} width={80} className="mx-8" />
+        </Link>
       </nav>
       <main className="col-span-11 mt-28 ml-72 overflow-auto">
         <div className='max-w-full mr-36 ml-19'>
@@ -119,7 +121,7 @@ export default function HomeScreen() {
                   <span>Ver mais detalhes...</span>
                   <img src="/images/Expand-more.svg" alt="Expand more" />
                 </div>
-                <div className='flex justify-end'>
+                <div className='flex justify-end' onClick={closeModalView}>
                   <Link href='' className='flex justify-center gap-1 bg-mediumToneBlue rounded-10rem py-2 px-8 items-center'>
                     <img src="/images/Print.svg" alt="Print" />
                     <span className='font-medium text-1.5xl text-whiteBlueGray '>Exportar</span>
