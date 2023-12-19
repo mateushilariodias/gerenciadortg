@@ -1,3 +1,4 @@
+import Header from '@/components/Header';
 import Input from '@/components/Input';
 import Button from '@/components/Button';
 import '../app/globals.css';
@@ -28,10 +29,7 @@ export default function HomeScreen() {
 
   return (
     <div className="grid grid-cols-12">
-      <header className="bg-whiteBlueGray flex items-center col-span-12 fixed z-30 w-full">
-        <span className="text-mediumToneBlack py-7 text-center font-normal text-4xl justify-center flex-grow">TG+</span>
-        <Image src="/images/exit.png" alt="Icon exit" height={72} width={72} className="flex justify-end mr-10" />
-      </header>
+      <Header></Header>
       <nav className="bg-whiteBlueGray col-span-1 flex flex-col justify-center gap-36 h-screen fixed z-20">
         <Image src="/images/home-sharp.png" alt="Icon home-sharp" height={80} width={80} className="mx-8" />
         <Link href="calendar-screen">
